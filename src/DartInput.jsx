@@ -43,26 +43,26 @@ function DartInput({ currentPlayer, onSubmitDarts }) {
           style={{ width: '100px', textAlign: 'center' }} 
         />
       </div>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 30px)", gap: "5px", justifyContent: 'center', marginTop: "10px" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 60px)", gap: "5px", justifyContent: 'center', marginTop: "10px" }}>
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((value) => (
           <button 
             key={value} 
             onClick={() => handleButtonClick(value)} 
-            style={{ width: '30px', height: '30px', fontSize: '16px' }}
+            style={{ width: '60px', height: '60px', fontSize: '16px' }}
           >
             {value}
           </button>
         ))}
         <button 
           onClick={clear} 
-          style={{ width: '30px', height: '30px', fontSize: '16px' }}
+          style={{ width: '60px', height: '60px', fontSize: '16px' }}
         >
           C
         </button>
         <button 
           key={0} 
           onClick={() => handleButtonClick(0)} 
-          style={{ width: '30px', height: '30px', fontSize: '16px' }}
+          style={{ width: '60px', height: '60px', fontSize: '16px' }}
         >
           0
         </button>
